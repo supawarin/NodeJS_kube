@@ -26,7 +26,7 @@
 
 
         
-    <img width="675" alt="js3" src="https://user-images.githubusercontent.com/83863431/201610598-359b61da-ab6d-46aa-a470-714f1434b63d.png">
+   <img width="675" alt="js3" src="https://user-images.githubusercontent.com/83863431/201610598-359b61da-ab6d-46aa-a470-714f1434b63d.png">
 
 
 ## 6. Run command kubectl apply -f kubernetes.yaml
@@ -40,7 +40,7 @@
         kubectl get svc  or kubectl get service
         
         
-        <img width="536" alt="js4" src="https://user-images.githubusercontent.com/83863431/201611605-5f67b142-0ff7-452b-bb07-5131612492f0.png">
+   <img width="536" alt="js4" src="https://user-images.githubusercontent.com/83863431/201611605-5f67b142-0ff7-452b-bb07-5131612492f0.png">
 
 
 ## 8. Open on localhost use node port number  example :  http://localhost:30968
