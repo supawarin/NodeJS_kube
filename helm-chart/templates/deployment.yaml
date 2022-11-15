@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-{{ .Values.targetEnv }}
+  namespace: {{ .Values.targetNS }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodejs-{{ .Values.targetEnv }}
+  template:
+    metadata:
+      labels:
+        app: nodejs-{{ .Values.targetEnv }}
+    spec:
+      containers:
+        - name: nodejs-{{ .Values.targetEnv }}
+          image: {{ .Values.targetImage }}:{{ .Values.targetImageTag }}
+          imagePullPolicy: Always
+          resources:
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 3000
