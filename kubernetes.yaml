@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: 127.0.0.1:5100/node-alpine
+        image: registry.workstation.co.uk/node-alpine
         resources:
           limits:
             memory: "128Mi"
